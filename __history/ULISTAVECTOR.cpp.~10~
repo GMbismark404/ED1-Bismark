@@ -1,0 +1,129 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "ULISTAVECTOR.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+Direccion ListaV::fin(){
+	if (vacia()){
+		throw out_of_range("La lista está vacía");
+	}else{
+		return longitud - 1;
+    }
+}
+
+Direccion ListaV::primero(){
+	if (vacia())
+		throw out_of_range("La lista está vacía");
+
+	return 0;
+}
+
+Direccion ListaV::siguiente(Direccion p){
+	if (vacia())
+		throw out_of_range("La lista está vacía");
+
+	if (p == longitud)
+		throw out_of_range("La dirección es incorrecta");
+
+	return (p+1);
+}
+
+Direccion ListaV::anterior(Direccion p){
+	if (vacia())
+		throw out_of_range("La lista está vacía");
+
+	if (p == 0)
+		throw out_of_range("La dirección es incorrecta");
+
+	return (p-1);
+}
+
+TipoElemento ListaV::recupera(Direccion p){
+    if (vacia())
+		throw out_of_range("La lista está vacía");
+
+	if (!(p>=0 && p<=longitud))
+		throw out_of_range("La dirección es incorrecta");
+
+	return elementos[p];
+}
+
+void ListaV::inserta(Direccion p, TipoElemento elemento){
+	if (longitud == MAX)
+		throw out_of_range("La lista está llena");
+
+	if (!(p>=0 && p<=longitud))
+		throw out_of_range("La dirección es incorrecta");
+
+	for (int i = longitud; i >= p; i--)
+		elementos[i] = elementos[i - 1];
+
+	elementos[p] = elemento;
+	longitud++;
+}
+
+void ListaV::inserta_primero(TipoElemento elemento){
+    if (longitud == MAX)
+		throw out_of_range("La lista está llena");
+
+	for (int i = longitud; i > 0; i--)
+		elementos[i] = elementos[i - 1];
+
+	elementos[0] = elemento;
+	longitud++;
+}
+
+void ListaV::inserta_ultimo(TipoElemento elemento){
+	if (longitud == MAX)
+		throw out_of_range("La lista está llena");
+
+	elementos[longitud++] = elemento;
+}
+
+void ListaV::suprime(Direccion p){
+	if (vacia())
+		throw out_of_range("La lista está vacía");
+
+	if (!(p>=0 && p<longitud))
+		throw out_of_range("La dirección es incorrecta");
+
+	for (int i = p; i < longitud - 1; i++)
+		elementos[i] = elementos[i + 1];
+
+	longitud--;
+}
+
+void ListaV::modifica(Direccion p,TipoElemento elemento){
+    if (vacia())
+		throw out_of_range("La lista está vacía");
+
+	if (!(p>=0 && p<longitud))
+		throw out_of_range("La dirección es incorrecta");
+
+	elementos[p] = elemento;
+}
+
+Direccion ListaV::buscar(TipoElemento elemento) {
+	for (int i = fin(); i != NULO ; i--) {
+		if (recupera(i) == elemento) {
+			return i;
+		}
+	}
+	return NULO;
+}
+
+void ListaV::imprimirLista(){
+	if (vacia()) {
+		cout << "La lista está vacía." << endl;
+		return;
+	}
+
+	cout << "Elementos de la lista:" << endl;
+	for (int i = 0; i < longitudListav(); ++i) {
+		cout << recupera(i) << " ";
+	}
+	cout << endl;
+}

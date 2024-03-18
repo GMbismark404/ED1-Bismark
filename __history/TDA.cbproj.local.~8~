@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/02/22 12:23:04.000.374,=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2024/02/22 12:23:04.000.367,=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024/02/22 12:23:30.000.237,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\TDA.cbproj</Transaction>
+    <Transaction>2024/02/22 12:23:30.000.235,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\TDAPCH1.h</Transaction>
+    <Transaction>2024/02/22 12:24:00.000.490,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\File1.cpp=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\MENU.cpp</Transaction>
+    <Transaction>2024/02/22 12:24:08.000.163,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\TDAPCH1.h=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\MENU.h</Transaction>
+    <Transaction>2024/02/22 12:24:38.000.738,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\MENU.cpp=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\MENU_PRINCIPAL.cpp</Transaction>
+    <Transaction>2024/02/22 12:24:47.000.554,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\MENU.h=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\MENU_PRINCIPAL.h</Transaction>
+    <Transaction>2024/02/22 12:26:20.000.419,=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024/02/22 12:26:42.000.501,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\UCSMemoria.h</Transaction>
+    <Transaction>2024/02/22 12:26:42.000.501,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\UCSMemoria.cpp</Transaction>
+    <Transaction>2024/02/22 12:27:36.000.599,=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024/02/22 12:28:13.000.375,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\ULISTAPUNTERO.h</Transaction>
+    <Transaction>2024/02/22 12:28:13.000.375,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\ULISTAPUNTERO.cpp</Transaction>
+    <Transaction>2024/02/22 12:28:48.000.573,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\UCSMemoria.h=D:\PRACTICAS DE PROGRAMACION\C++\TDA\UCSMemoria.h</Transaction>
+    <Transaction>2024/02/22 12:28:48.000.579,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\ULISTAPUNTERO.cpp=D:\PRACTICAS DE PROGRAMACION\C++\TDA\ULISTAPUNTERO.cpp</Transaction>
+    <Transaction>2024/02/22 12:28:48.000.581,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\TDA.cbproj=D:\PRACTICAS DE PROGRAMACION\C++\TDA\TDA.cbproj</Transaction>
+    <Transaction>2024/02/22 12:28:48.000.573,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\UCSMemoria.cpp=D:\PRACTICAS DE PROGRAMACION\C++\TDA\UCSMemoria.cpp</Transaction>
+    <Transaction>2024/02/22 12:28:48.000.579,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\ULISTAPUNTERO.h=D:\PRACTICAS DE PROGRAMACION\C++\TDA\ULISTAPUNTERO.h</Transaction>
+    <Transaction>2024/02/22 12:28:48.000.567,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\MENU_PRINCIPAL.cpp=D:\PRACTICAS DE PROGRAMACION\C++\TDA\MENU_PRINCIPAL.cpp</Transaction>
+    <Transaction>2024/02/23 19:00:15.000.911,=D:\PRACTICAS DE PROGRAMACION\C++\TDA\Unit1.cpp</Transaction>
+    <Transaction>2024/02/23 19:00:28.000.199,D:\PRACTICAS DE PROGRAMACION\C++\TDA\ULISTAVECTOR.cpp=D:\PRACTICAS DE PROGRAMACION\C++\TDA\Unit1.cpp</Transaction>
+    <Transaction>2024/02/23 19:00:28.000.199,D:\PRACTICAS DE PROGRAMACION\C++\TDA\ULISTAVECTOR.h=D:\PRACTICAS DE PROGRAMACION\C++\TDA\Unit1.h</Transaction>
+    <Transaction>2024/02/27 12:59:49.000.576,=D:\PRACTICAS DE PROGRAMACION\C++\TDA\Unit1.cpp</Transaction>
+    <Transaction>2024/02/27 13:00:05.000.967,D:\PRACTICAS DE PROGRAMACION\C++\TDA\ULISTACSMemoria.cpp=D:\PRACTICAS DE PROGRAMACION\C++\TDA\Unit1.cpp</Transaction>
+    <Transaction>2024/02/27 13:00:05.000.967,D:\PRACTICAS DE PROGRAMACION\C++\TDA\ULISTACSMemoria.h=D:\PRACTICAS DE PROGRAMACION\C++\TDA\Unit1.h</Transaction>
+    <Transaction>2024/03/02 10:49:30.000.524,=D:\PRACTICAS DE PROGRAMACION\C++\TDA\Unit1.cpp</Transaction>
+    <Transaction>2024/03/02 10:50:21.000.191,D:\PRACTICAS DE PROGRAMACION\C++\TDA\Unit1.cpp=D:\PRACTICAS DE PROGRAMACION\C++\TDA\UDEFGENERAL.cpp</Transaction>
+    <Transaction>2024/03/02 10:50:21.000.191,D:\PRACTICAS DE PROGRAMACION\C++\TDA\Unit1.h=D:\PRACTICAS DE PROGRAMACION\C++\TDA\UDEFGENERAL.h</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <VirtualFolder ID="{E408D16D-8568-4BD3-8756-B2C82A084C27}"/>
+    <File Path="UCSMemoria.cpp"/>
+    <File Path="UCSMemoria.cpp"/>
+    <File Path="UCSMemoria.h"/>
+    <File Path="UDEFGENERAL.cpp"/>
+    <File Path="UDEFGENERAL.cpp"/>
+    <File Path="UDEFGENERAL.h"/>
+    <VirtualFolder ID="{7ECE2EF5-43A1-4B66-8154-AC64171D8505}"/>
+    <File Path="ULISTACSMemoria.cpp"/>
+    <File Path="ULISTACSMemoria.cpp"/>
+    <File Path="ULISTACSMemoria.h"/>
+    <File Path="ULISTAPUNTERO.cpp"/>
+    <File Path="ULISTAPUNTERO.cpp"/>
+    <File Path="ULISTAPUNTERO.h"/>
+    <File Path="ULISTAVECTOR.cpp"/>
+    <File Path="ULISTAVECTOR.cpp"/>
+    <File Path="ULISTAVECTOR.h"/>
+    <VirtualFolder ID="{7BA96F04-E58A-484E-A3D5-6A11E939C865}"/>
+    <File Path="C:"/>
+    <File Path="C:\Users"/>
+    <File Path="C:\Users\USUARIO"/>
+    <File Path="C:\Users\USUARIO\Documents"/>
+    <File Path="C:\Users\USUARIO\Documents\Embarcadero"/>
+    <File Path="C:\Users\USUARIO\Documents\Embarcadero\Studio"/>
+    <File Path="C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects"/>
+    <File Path="C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\MENU_PRINCIPAL.h"/>
+    <File Path="MENU_PRINCIPAL.cpp"/>
+  </ProjectSortOrder>
+</BorlandProject>

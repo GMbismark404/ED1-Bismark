@@ -1,0 +1,69 @@
+//---------------------------------------------------------------------------
+
+#ifndef UCSMemoriaH
+#define UCSMemoriaH
+//---------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+using namespace std;
+const int MAX = 20;
+const int NULO = -1;
+typedef int direccion;
+
+struct Nodo{
+	int dato;
+	string id;
+	direccion link;
+};
+
+class CSMemoria {
+private:
+	Nodo* mem;
+	direccion libre;
+public:
+	CSMemoria();
+	direccion new_espacio(string cadena);
+	void delete_espacio(direccion dir);
+	void poner_dato(direccion dir, string cadena_id, int valor);
+	int obtener_dato(direccion dir, string cadena_id);
+	int espacio_disponible();
+	int espacio_ocupado();
+	bool dir_libre(direccion dir);
+	int numero_ids(string cadena);
+	string obtener_id(string cadena, int pos);
+};
+
+int CSMemoria::numero_ids(string id) { // "dia,mes,año"
+int c = 0;
+	if (id == ""){
+		return c;
+	}else{
+		for (int i = 0; i < id.length() - 1; i++)
+			if ((id[i] != ',') && (id[i+1] == ','))
+				c++;
+
+		if (id[id.length() - 1] != ',')
+			c++;
+	}
+return c;
+}
+
+string CSMemoria::obtener_id(string cad, int pos) {  // "ca,na,ma"
+int p = 0; string s = ""; int c = 0;
+
+	if (cad[c] == ',')
+		c++;
+
+	for (int i = c; i < cad.length(); i++) {
+		if (cad[i] == ',') {
+			i++; p++;
+		}
+
+		if (p == pos) {
+			s = s + cad[i];
+		}
+	}
+return s;
+}
+
+#endif

@@ -1,0 +1,36 @@
+//---------------------------------------------------------------------------
+#ifndef ULISTACSMemoriaH
+#define ULISTACSMemoriaH
+#include "UCSMemoria.h"
+//---------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+#include <stdexcept>
+typedef int TipoElemento;
+struct NodoCSMemoria{
+	TipoElemento elemento;
+	Nodo* sig;
+};
+
+class ListaS {
+private:
+	direccion PtrElementos;
+	int longitud;
+public:
+	ListaS() : longitud(0), PtrElementos(NULO) {}
+	direccion fin();
+	direccion primero();
+	direccion siguiente(direccion p);
+	direccion anterior(direccion p);
+	bool vacia() { return (longitud == 0) || (PtrElementos == NULO); }
+	TipoElemento recupera(direccion p);
+	int longitudListas() { return longitud; }
+	void inserta(direccion p, TipoElemento elemento);
+	void inserta_primero(TipoElemento elemento);
+	void inserta_ulitmo(TipoElemento elemento);
+	void suprime(direccion p);
+	void modifica(direccion p, TipoElemento elemento);
+
+};
+
+#endif

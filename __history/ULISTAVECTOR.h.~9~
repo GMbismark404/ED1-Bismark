@@ -1,0 +1,36 @@
+//---------------------------------------------------------------------------
+#ifndef ULISTAVECTORH
+#define ULISTAVECTORH
+//---------------------------------------------------------------------------
+#include <iostream>
+#include <stdexcept>
+using namespace std;
+
+const int MAX = 10;
+const int NULO = -1;
+
+typedef int Direccion;
+typedef int TipoElemento;
+
+class ListaV {
+private:
+	TipoElemento elementos[MAX];
+	int longitud;
+public:
+	ListaV() : longitud(0) {} // Constructor: Inicializa longitud con 0
+	Direccion fin();
+	Direccion primero();
+	Direccion siguiente(Direccion p);
+	Direccion anterior(Direccion p);
+	bool vacia() { return (longitud == 0); }
+	TipoElemento recupera(Direccion p);
+	int longitudListav() { return (longitud); }
+	void inserta(Direccion p, TipoElemento elemento);
+	void inserta_primero(TipoElemento elemento);
+	void inserta_ultimo(TipoElemento elemento);
+	void suprime(Direccion);
+	void modifica(Direccion p,TipoElemento elemento);
+	void imprimirLista();
+};
+
+#endif

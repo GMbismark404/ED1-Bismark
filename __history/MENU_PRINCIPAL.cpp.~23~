@@ -1,0 +1,271 @@
+#include <iostream>
+#include <tchar.h>
+#include "ULISTAVECTOR.h"
+#include "ULISTAPUNTERO.h"
+#include "ULISTACSMemoria.h"
+using namespace std;
+
+void MenuPrincipal();
+void MenuCSMemoria();
+void MenuLista_CSMemoria();
+void MenuLista_Vector();
+void MenuLista_Puntero();
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+MenuPrincipal();
+system("pause");
+}
+
+void MenuPrincipal(){
+	cout << "1. CSMemoria" << endl;
+	cout << "2. Lista CSMemoria" << endl;
+	cout << "3. Lista Vector" << endl;
+	cout << "4. Lista Puntero" << endl;
+	cout << "5. Polinomio CSMemoria" << endl;
+	cout << "6. Conjunto Lista" << endl;
+	cout << "7. Terminar programa" << endl;
+	int opcion;
+	do{
+	cout << "Opcion: ";
+	cin >> opcion;
+		switch (opcion) {
+			case 1: {
+				MenuCSMemoria();
+			} break;
+			case 2: {
+				 MenuLista_CSMemoria();
+			} break;
+			case 3: {
+				MenuLista_Vector();
+			} break;
+			case 4: {
+				MenuLista_Puntero();
+			} break;
+			case 5: {
+//				MenuPolinomio_CSMemoria();
+			} break;
+			case 6: {
+//				MenuConjuntoLista();
+			} break;
+			case 7: {
+				cout << "PROGRAMA FINALIZADO" << endl;
+			} break;
+			default: {
+				cout << "ERRO/Fuera de rango, intentar de nuevo: " << endl;
+			}
+		}
+	}while (opcion != 7);
+
+}
+
+void MenuCSMemoria() {
+CSMemoria *mem;
+int opcion;
+cout << "1. Crear" << endl;
+cout << "2. Pedir espacio" << endl;
+cout << "3. Liberar espacio" << endl;
+cout << "4. Poner dato" << endl;
+cout << "5. Mostrar Memoria" << endl;
+cout << "6. Salir" << endl;
+	do{
+//  fflush(stdin);
+	cout << "Opcion: ";
+	cin >> opcion;
+		switch (opcion) {
+			case 1: {
+				mem = new CSMemoria();
+				cout << "Memoria creada \n";
+			} break;
+			case 2: {
+				string ids;
+				cout << "ids: ";
+				cin.ignore();
+				getline(cin, ids);
+				mem->new_espacio(ids);
+			} break;
+			case 3: {
+				int dir_delete;
+				cout << "Direccion a liberar: ";
+				cin >> dir_delete;
+				mem->delete_espacio(dir_delete);
+			} break;
+			case 4: {
+				int dir, valor;
+				string id;
+				cout << "Direccion: ";
+				cin >> dir;
+				cout << "Id: " << endl;
+				cin.ignore();
+				getline(cin, id);
+				cout << "valor: ";
+				cin >> valor;
+				mem->poner_dato(dir, id, valor);
+			} break;
+			case 5: {
+				mem->Mostrar();
+			} break;
+			case 6: {
+                cout << "PROGRAMA FINALIZADO";
+			} break;
+			default: {
+			cout << "ERRO/Fuera de rango, intentar de nuevo: " << endl;
+			}
+		}
+	}while (opcion != 6);
+}
+
+void MenuLista_CSMemoria() {
+ListaS *cs;
+int opcion, elemento;
+cout << "1. Crear Lista" << endl;
+cout << "2. Insertar" << endl;
+cout << "3. Insertar primero" << endl;
+cout << "4. Insertar ultimo" << endl;
+cout << "5. Inserta siguiente primero" << endl;
+cout << "6. Insertar anterio fin" << endl;
+cout << "7. Mostrar Lista" << endl;
+cout << "8. Salir" << endl;
+	do{
+	cout << "Opcion: ";
+	cin >> opcion;
+		switch (opcion) {
+			case 1: {
+				cs = new ListaS;
+				cout << "Lista Creada" << endl;
+			} break;
+			case 2: {
+				cout << "Insertar elemento: " << endl;
+				cout << "elemento: "; cin >> elemento;
+				cs->inserta(cs->primero(), elemento);
+			} break;
+			case 3: {
+				cout << "Insertar elemento: " << endl;
+				cout << "elemento: "; cin >> elemento;
+				cs->inserta_primero(elemento);
+			} break;
+			case 4: {
+				cout << "Insertar elemento: " << endl;
+				cout << "elemento: "; cin >> elemento;
+				cs->inserta_ulitmo(elemento);
+			} break;
+			case 5: {
+				cout << "Insertar elemento: " << endl;
+				cout << "elemento: "; cin >> elemento;
+				cs->inserta(cs->siguiente(cs->primero()),elemento);
+			} break;
+			case 6: {
+				cout << "Insertar elemento: " << endl;
+				cout << "elemento: "; cin >> elemento;
+				cs->inserta(cs->anterior(cs->fin()),elemento);
+			} break;
+			case 7: {
+				cs->mostrasLista();
+				cout << endl;
+			} break;
+			case 8: {
+				cout << "PROGRAMA FINALIZADO";
+			} break;
+			case 9: {
+				cout << cs->fin();
+			} break;
+			default: {
+				cout << "ERRO/Fuera de rango, intentar de nuevo: " << endl;
+			}
+		}
+	}while (opcion != 8);
+}
+
+void MenuLista_Vector() {
+ListaV *v;
+int opcion, dato;
+cout << "1. Crear Lista" << endl;
+cout << "2. Insertar" << endl;
+cout << "3. Insertar primero" << endl;
+cout << "4. Insertar ultimo" << endl;
+cout << "5. Inserta siguiente primero" << endl;
+cout << "6. Insertar anterio fin" << endl;
+cout << "7. Mostrar" << endl;
+cout << "8. Salir" << endl;
+	do{
+    cout << "Opcion: ";
+	cin >> opcion;
+		switch (opcion) {
+			case 1: {
+				v = new ListaV;
+				cout << "Lista Creada" << endl;
+			} break;
+			case 2: {
+				cout << "Insertar dato: ";
+				cin >> dato;
+				v->inserta(v->primero(), dato);
+			} break;
+			case 3: {
+                cout << "Insertar dato: ";
+				cin >> dato;
+				v->inserta_primero(dato);
+			} break;
+			case 4: {
+				cout << "Insertar dato: ";
+				cin >> dato;
+				v->inserta_ultimo(dato);
+			} break;
+			case 5: {
+                cout << "Insertar dato: ";
+				cin >> dato;
+				v->inserta(v->siguiente(v->primero()), dato);
+			} break;
+			case 6: {
+                cout << "Insertar dato: ";
+				cin >> dato;
+				v->inserta(v->anterior(v->fin()), dato);
+			} break;
+			case 7: {
+				v->imprimirLista();
+			} break;
+			case 8: {
+				cout << "PROGRAMA FINALIZADO";
+			} break;
+		default:
+			cout << "ERRO/Fuera de rango, intentar de nuevo: " << endl;
+		}
+	} while(opcion != 8);
+}
+
+void MenuLista_Puntero(){
+ListaP *ptr;
+int opcion,dato;
+cout << "1. Crear Lista" << endl;
+cout << "2. Insertar" << endl;
+cout << "3. Inserta siguiente primero" << endl;
+cout << "4. Insertar anterio fin" << endl;
+cout << "5. Mostrar Lista" << endl;
+cout << "6. Salir" << endl;
+	do{
+	cout << "Opcion: ";
+	cin >> opcion;
+		switch (opcion) {
+			case 1: {
+				ptr = new ListaP;
+				cout << "Lista Creada" << endl;
+			} break;
+			case 2: {
+				cout << "Insertar dato: ";
+				cin >> dato;
+				ptr->inserta(ptr->primero(), dato);
+			} break;
+			case 5: {
+				ptr->mostrarLista();
+				cout << endl;
+			} break;
+			case 6: {
+				cout << "PROGRAMA FINALIZADO";
+			} break;
+			default: {
+				cout << "ERRO/Fuera de rango, intentar de nuevo: " << endl;
+			}
+		}
+	}while (opcion != 6);
+}
+
+

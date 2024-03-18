@@ -1,0 +1,35 @@
+//---------------------------------------------------------------------------
+
+#ifndef ULISTAVECTORH
+#define ULISTAVECTORH
+//---------------------------------------------------------------------------
+#include <iostream>
+#include <stdexcept>
+using namespace std;
+
+const int MAX = 10;
+const int NULO = -1;
+
+typedef int Direccion;
+typedef int TipoElemento;
+
+class ListaV {
+private:
+	TipoElemento elementos[MAX];
+	int longitud;
+public:
+	ListaV();
+	Direccion fin();
+	Dirección primero();
+	Dirección siguiente( dirección);
+	Dirección anterior( dirección);
+	booleano vacia();
+	TipoElemento recupera(dirección);
+	entero longitud ();
+	inserta( dirección, elemento);
+	inserta_primero( elemento);
+	inserta_ultimo(elemento);
+	suprime( dirección);
+	modifica( dirección, elemento);
+};
+#endif
